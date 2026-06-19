@@ -56,7 +56,7 @@
                                         <rect key="frame" x="0.0" y="663.66666666666663" width="400" height="10.333333333333371"/>
                                         <string key="text">Рейтинг этого фильма
 меньше чем 5?</string>
-                                        <fontDescription key="fontDescription" name="YSDisplay-Bold" family="YS Display" pointSize="20"/>
+                                        <fontDescription key="fontDescription" name="YSDisplay-Bold" family="YS Display" pointSize="23"/>
                                         <color key="textColor" name="YP White"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -79,6 +79,9 @@
                                                         <integer key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="noButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sjp-1A-QiB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vBD-u8-R5q">
                                                 <rect key="frame" x="210" y="0.0" width="190" height="60"/>
@@ -93,6 +96,9 @@
                                                         <integer key="value" value="15"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="yesButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r9F-S8-tg9"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -112,6 +118,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="egs-EG-bp4" secondAttribute="bottom" id="rS8-ji-30H"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="counterLabel" destination="aek-Bt-Qhv" id="hS2-sg-kqB"/>
+                        <outlet property="imageView" destination="pem-ly-FnE" id="KVR-u5-K1k"/>
+                        <outlet property="textLabel" destination="3i1-q5-bfA" id="byd-DQ-cf3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
